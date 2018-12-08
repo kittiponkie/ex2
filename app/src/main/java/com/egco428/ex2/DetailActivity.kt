@@ -20,7 +20,7 @@ class DetailActivity : AppCompatActivity() {
             showText.setText(bundle.getString("input1")) //for plainText
         }
         nextBtn.setOnClickListener {
-            val intent = Intent(this, ThirdActivity::class.java)
+            val intent = Intent(this@DetailActivity, ThirdActivity::class.java)
             if(bundle != null) {
                 inp1 = bundle.getString("input1").toInt()
                 inp2 = textView3.text.toString().toInt()

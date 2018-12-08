@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         nextBtn.setOnClickListener {
-            val intent = Intent(this, DetailActivity::class.java)
+            val intent = Intent(this@MainActivity, DetailActivity::class.java)
             intent.putExtra("input1", editText.text.toString())
             startActivity(intent)
         }

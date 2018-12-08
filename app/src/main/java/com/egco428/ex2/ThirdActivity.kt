@@ -14,8 +14,7 @@ class ThirdActivity : AppCompatActivity() {
         var total: Int = 0
         if(bundle != null){
             total = bundle.getString("input2").toInt()
-
-            editText2.setText(total.toString()) //for plainText
+            editText2.setText(total.toString())
         }
 
         button.setOnClickListener {
